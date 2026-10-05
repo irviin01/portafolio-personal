@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f7fb;
+  color: #222;
+}
+
+header {
+  background: #172554;
+  color: white;
+  padding: 18px 8%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #172554;
+  margin: 10px 0;
+}
+
+.saludo {
+  font-size: 20px;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background: #172554;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.seccion {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+.seccion h2 {
+  color: #172554;
+  margin-bottom: 15px;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 200px;
+  box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.seccion a {
+  color: #172554;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #172554;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+  nav a {
+    margin: 0 8px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+}
